@@ -1,0 +1,117 @@
+Console output:
+
+BuyerSession.findAllBuyer:
+[Buyer{idBuyer=1, name='b0', region='Avtozavodsky', sale=2.5}, Buyer{idBuyer=2, name='b1', region='Kanavinsky', sale=10.0}, Buyer{idBuyer=3, name='b2', region='Leninist', sale=15.0},
+ Buyer{idBuyer=4, name='UPDATE', region='up-te', sale=4.0}, Buyer{idBuyer=5, name='b4', region='Nizhny Novgorod', sale=2.5}, Buyer{idBuyer=6, name='b5', region='Prioksky', sale=5.0},
+ Buyer{idBuyer=7, name='b6', region='Soviet', sale=5.0}, Buyer{idBuyer=8, name='b7', region='Sormovsky', sale=7.5}, Buyer{idBuyer=9, name='b8', region='Soviet', sale=15.0},
+ Buyer{idBuyer=10, name='b9', region='Kanavinsky', sale=2.5}, Buyer{idBuyer=11, name='ADD', region='ADD_REG', sale=3.0}]
+ShopSession.findAllShop:
+[Shop{idShop=1, name='Shop 0', region='Sormovsky', commission=10.0}, Shop{idShop=2, name='Shop 1', region='Moscow', commission=12.0},
+ Shop{idShop=3, name='Shop 2', region='Prioksky', commission=10.0}, Shop{idShop=4, name='UPDATE', region='up-te', commission=4.0},
+ Shop{idShop=5, name='Shop 4', region='Sormovsky', commission=10.0}, Shop{idShop=6, name='Shop 5', region='Soviet', commission=18.0},
+ Shop{idShop=7, name='Shop 6', region='Soviet', commission=15.0}, Shop{idShop=8, name='Shop 7', region='Leninist', commission=10.0},
+ Shop{idShop=9, name='Shop 8', region='Nizhny Novgorod', commission=12.0}, Shop{idShop=10, name='Shop 9', region='Avtozavodsky', commission=15.0},
+ Shop{idShop=11, name='ADD', region='ADD_REG', commission=3.0}]
+BookSession.findAllBooks:
+[Book{idBook=1, name='Book 0', price=5000.0, region='Nizhny Novgorod', qty=10}, Book{idBook=2, name='Book 1', price=2500.0, region='Leninist', qty=100},
+ Book{idBook=3, name='Book 2', price=50000.0, region='Avtozavodsky', qty=5}, Book{idBook=4, name='Windows', price=4.0, region='up-te', qty=4},
+ Book{idBook=5, name='Book 4', price=1000.0, region='Soviet', qty=20}, Book{idBook=6, name='Book 5', price=3000.0, region='Sormovsky', qty=200},
+ Book{idBook=7, name='.NET for Windows', price=1599.0, region='Kanavinsky', qty=3}, Book{idBook=8, name='Book 7', price=20001.0, region='up-te', qty=4},
+ Book{idBook=9, name='Book 8', price=500.0, region='Avtozavodsky', qty=30}, Book{idBook=10, name='Book 9', price=3000.0, region='Moscow', qty=10},
+ Book{idBook=11, name='UPDATE_BOOK', price=4.0, region='up-te', qty=4}, Book{idBook=12, name='UPDATE_BOOK', price=4.0, region='up-te', qty=4},
+ Book{idBook=13, name='ADD', price=3.0, region='ADD_REG', qty=3}]
+PurchaseSession.findAllPurchase:
+[Purchase{idPurchase=1, date=2018-11-30 08:00:00.0, shop=Shop{idShop=10, name='Shop 9', region='Avtozavodsky', commission=15.0}, buyer=Buyer{idBuyer=1, name='b0', region='Avtozavodsky', sale=2.5}, book=Book{idBook=3, name='Book 2', price=50000.0, region='Avtozavodsky', qty=5}, qty=2, total=8300.0},
+ Purchase{idPurchase=2, date=2019-01-01 08:00:00.0, shop=Shop{idShop=1, name='Shop 0', region='Sormovsky', commission=10.0}, buyer=Buyer{idBuyer=2, name='b1', region='Kanavinsky', sale=10.0}, book=Book{idBook=1, name='Book 0', price=5000.0, region='Nizhny Novgorod', qty=10}, qty=200, total=140000.0},
+ Purchase{idPurchase=3, date=2018-11-14 08:00:00.0, shop=Shop{idShop=9, name='Shop 8', region='Nizhny Novgorod', commission=12.0}, buyer=Buyer{idBuyer=3, name='b2', region='Leninist', sale=15.0}, book=Book{idBook=1, name='Book 0', price=5000.0, region='Nizhny Novgorod', qty=10}, qty=13, total=3500.0},
+ Purchase{idPurchase=4, date=1969-12-31 08:00:00.0, shop=Shop{idShop=2, name='Shop 1', region='Moscow', commission=12.0}, buyer=Buyer{idBuyer=4, name='UPDATE', region='up-te', sale=4.0}, book=Book{idBook=12, name='UPDATE_BOOK', price=4.0, region='up-te', qty=4}, qty=4, total=4.0},
+ Purchase{idPurchase=5, date=2018-01-17 08:00:00.0, shop=Shop{idShop=8, name='Shop 7', region='Leninist', commission=10.0}, buyer=Buyer{idBuyer=6, name='b5', region='Prioksky', sale=5.0}, book=Book{idBook=8, name='Book 7', price=20001.0, region='up-te', qty=4}, qty=40, total=80000.0},
+ Purchase{idPurchase=6, date=2018-09-10 07:00:00.0, shop=Shop{idShop=3, name='Shop 2', region='Prioksky', commission=10.0}, buyer=Buyer{idBuyer=5, name='b4', region='Nizhny Novgorod', sale=2.5}, book=Book{idBook=4, name='Windows', price=4.0, region='up-te', qty=4}, qty=2, total=60000.0},
+ Purchase{idPurchase=7, date=2018-08-26 07:00:00.0, shop=Shop{idShop=2, name='Shop 1', region='Moscow', commission=12.0}, buyer=Buyer{idBuyer=8, name='b7', region='Sormovsky', sale=7.5}, book=Book{idBook=9, name='Book 8', price=500.0, region='Avtozavodsky', qty=30}, qty=4, total=4500.0},
+ Purchase{idPurchase=8, date=2018-02-28 08:00:00.0, shop=Shop{idShop=4, name='UPDATE', region='up-te', commission=4.0}, buyer=Buyer{idBuyer=7, name='b6', region='Soviet', sale=5.0}, book=Book{idBook=10, name='Book 9', price=3000.0, region='Moscow', qty=10}, qty=90, total=65000.0},
+ Purchase{idPurchase=9, date=2018-06-02 07:00:00.0, shop=Shop{idShop=5, name='Shop 4', region='Sormovsky', commission=10.0}, buyer=Buyer{idBuyer=10, name='b9', region='Kanavinsky', sale=2.5}, book=Book{idBook=8, name='Book 7', price=20001.0, region='up-te', qty=4}, qty=1, total=2540.0},
+ Purchase{idPurchase=10, date=2018-06-29 07:00:00.0, shop=Shop{idShop=6, name='Shop 5', region='Soviet', commission=18.0}, buyer=Buyer{idBuyer=9, name='b8', region='Soviet', sale=15.0}, book=Book{idBook=6, name='Book 5', price=3000.0, region='Sormovsky', qty=200}, qty=1, total=800.0},
+ Purchase{idPurchase=11, date=2019-01-13 08:00:00.0, shop=Shop{idShop=3, name='Shop 2', region='Prioksky', commission=10.0}, buyer=Buyer{idBuyer=3, name='b2', region='Leninist', sale=15.0}, book=Book{idBook=3, name='Book 2', price=50000.0, region='Avtozavodsky', qty=5}, qty=3, total=3.0}]
+
+BuyerSession.findBuyerById:
+Buyer{idBuyer=1, name='b0', region='Avtozavodsky', sale=2.5}
+ShopSession.findShopById:
+Shop{idShop=1, name='Shop 0', region='Sormovsky', commission=10.0}
+BookSession.findBookById:
+Book{idBook=1, name='Book 0', price=5000.0, region='Nizhny Novgorod', qty=10}
+PurchaseSession.findPurchaseById
+Purchase{idPurchase=1, date=2018-11-30 08:00:00.0, shop=Shop{idShop=10, name='Shop 9', region='Avtozavodsky', commission=15.0}, buyer=Buyer{idBuyer=1, name='b0', region='Avtozavodsky', sale=2.5}, book=Book{idBook=3, name='Book 2', price=50000.0, region='Avtozavodsky', qty=5}, qty=2, total=8300.0}
+BuyerSession.numberOfRow:
+11
+ShopSession.numberOfRow:
+11
+BookSession.numberOfRow:
+13
+PurchaseSession.numberOfRow:
+11
+
+BookSession.task2a
+[{name=Book 0, price=5000.0}, {name=Book 1, price=2500.0}, {name=Book 2, price=50000.0}, {name=Windows, price=4.0}, {name=Book 4, price=1000.0},
+{name=Book 5, price=3000.0}, {name=.NET for Windows, price=1599.0}, {name=Book 7, price=20001.0}, {name=Book 8, price=500.0},
+{name=Book 9, price=3000.0}, {name=UPDATE_BOOK, price=4.0}, {name=ADD, price=3.0}]
+
+BuyerSession.task2b
+[Avtozavodsky, Kanavinsky, Leninist, up-te, Nizhny Novgorod, Prioksky, Soviet, Sormovsky, ADD_REG]
+
+PurchaseSession.task2c
+[{dateColumn=11-2018}, {dateColumn=01-2019}, {dateColumn=12-1969}, {dateColumn=01-2018}, {dateColumn=09-2018}, {dateColumn=08-2018},
+ {dateColumn=02-2018}, {dateColumn=06-2018}]
+
+BuyerSession.task3a
+[Buyer{idBuyer=5, name='b4', region='Nizhny Novgorod', sale=2.5}]
+
+ShopSession.task3b
+[Shop{idShop=1, name='Shop 0', region='Sormovsky', commission=10.0}, Shop{idShop=5, name='Shop 4', region='Sormovsky', commission=10.0},
+ Shop{idShop=6, name='Shop 5', region='Soviet', commission=18.0}, Shop{idShop=7, name='Shop 6', region='Soviet', commission=15.0}]
+
+ BookSession.task3c
+ [{name=Book 2, price=50000.0}, {name=Book 7, price=20001.0}, {name=.NET for Windows, price=1599.0}, {name=Windows, price=4.0}]
+
+PurchaseSession.task4a
+[{BuyerFamily=b0, ShopName=Shop 9}, {BuyerFamily=b1, ShopName=Shop 0}, {BuyerFamily=b2, ShopName=Shop 8}, {BuyerFamily=UPDATE, ShopName=Shop 1},
+ {BuyerFamily=b5, ShopName=Shop 7}, {BuyerFamily=b4, ShopName=Shop 2}, {BuyerFamily=b7, ShopName=Shop 1}, {BuyerFamily=b6, ShopName=UPDATE},
+ {BuyerFamily=b9, ShopName=Shop 4}, {BuyerFamily=b8, ShopName=Shop 5}, {BuyerFamily=b2, ShopName=Shop 2}]
+PurchaseSession.task4b
+[{BuyerSale=2.5, Date=2018-11-30, BuyerFamily=b0, BookName=Book 9, CountBooks=2},
+ {BuyerSale=10.0, Date=2019-01-01, BuyerFamily=b1, BookName=Book 0, CountBooks=200},
+ {BuyerSale=15.0, Date=2018-11-14, BuyerFamily=b2, BookName=Book 8, CountBooks=13},
+ {BuyerSale=4.0, Date=1969-12-31, BuyerFamily=UPDATE, BookName=Book 1, CountBooks=4},
+ {BuyerSale=5.0, Date=2018-01-17, BuyerFamily=b5, BookName=Book 7, CountBooks=40},
+ {BuyerSale=2.5, Date=2018-09-10, BuyerFamily=b4, BookName=Book 2, CountBooks=2},
+ {BuyerSale=7.5, Date=2018-08-26, BuyerFamily=b7, BookName=Book 1, CountBooks=4},
+ {BuyerSale=5.0, Date=2018-02-28, BuyerFamily=b6, BookName=Windows, CountBooks=90},
+ {BuyerSale=2.5, Date=2018-06-02, BuyerFamily=b9, BookName=Book 4, CountBooks=1},
+ {BuyerSale=15.0, Date=2018-06-29, BuyerFamily=b8, BookName=Book 5, CountBooks=1},
+ {BuyerSale=15.0, Date=2019-01-13, BuyerFamily=b2, BookName=Book 2, CountBooks=3}]
+
+PurchaseSession.task5a
+Purchase: 2 Buyer: b1 DatePurchase: 2019-01-01 08:00:00.0
+Purchase: 5 Buyer: b5 DatePurchase: 2018-01-17 08:00:00.0
+Purchase: 6 Buyer: b4 DatePurchase: 2018-09-10 07:00:00.0
+Purchase: 8 Buyer: b6 DatePurchase: 2018-02-28 08:00:00.0
+
+PurchaseSession.task5b
+[Purchase{idPurchase=1, date=2018-11-30 08:00:00.0, shop=Shop{idShop=10, name='Shop 9', region='Avtozavodsky', commission=15.0}, buyer=Buyer{idBuyer=1, name='b0', region='Avtozavodsky', sale=2.5}, book=Book{idBook=3, name='Book 2', price=50000.0, region='Avtozavodsky', qty=5}, qty=2, total=8300.0},
+ Purchase{idPurchase=2, date=2019-01-01 08:00:00.0, shop=Shop{idShop=1, name='Shop 0', region='Sormovsky', commission=10.0}, buyer=Buyer{idBuyer=2, name='b1', region='Kanavinsky', sale=10.0}, book=Book{idBook=1, name='Book 0', price=5000.0, region='Nizhny Novgorod', qty=10}, qty=200, total=140000.0},
+ Purchase{idPurchase=3, date=2018-11-14 08:00:00.0, shop=Shop{idShop=9, name='Shop 8', region='Nizhny Novgorod', commission=12.0}, buyer=Buyer{idBuyer=3, name='b2', region='Leninist', sale=15.0}, book=Book{idBook=1, name='Book 0', price=5000.0, region='Nizhny Novgorod', qty=10}, qty=13, total=3500.0},
+ Purchase{idPurchase=6, date=2018-09-10 07:00:00.0, shop=Shop{idShop=3, name='Shop 2', region='Prioksky', commission=10.0}, buyer=Buyer{idBuyer=5, name='b4', region='Nizhny Novgorod', sale=2.5}, book=Book{idBook=4, name='Windows', price=4.0, region='up-te', qty=4}, qty=2, total=60000.0},
+ Purchase{idPurchase=7, date=2018-08-26 07:00:00.0, shop=Shop{idShop=2, name='Shop 1', region='Moscow', commission=12.0}, buyer=Buyer{idBuyer=8, name='b7', region='Sormovsky', sale=7.5}, book=Book{idBook=9, name='Book 8', price=500.0, region='Avtozavodsky', qty=30}, qty=4, total=4500.0},
+ Purchase{idPurchase=9, date=2018-06-02 07:00:00.0, shop=Shop{idShop=5, name='Shop 4', region='Sormovsky', commission=10.0}, buyer=Buyer{idBuyer=10, name='b9', region='Kanavinsky', sale=2.5}, book=Book{idBook=8, name='Book 7', price=20001.0, region='up-te', qty=4}, qty=1, total=2540.0},
+ Purchase{idPurchase=10, date=2018-06-29 07:00:00.0, shop=Shop{idShop=6, name='Shop 5', region='Soviet', commission=18.0}, buyer=Buyer{idBuyer=9, name='b8', region='Soviet', sale=15.0}, book=Book{idBook=6, name='Book 5', price=3000.0, region='Sormovsky', qty=200}, qty=1, total=800.0},
+ Purchase{idPurchase=11, date=2019-01-13 08:00:00.0, shop=Shop{idShop=3, name='Shop 2', region='Prioksky', commission=10.0}, buyer=Buyer{idBuyer=3, name='b2', region='Leninist', sale=15.0}, book=Book{idBook=3, name='Book 2', price=50000.0, region='Avtozavodsky', qty=5}, qty=3, total=3.0}]
+ Buyer: b8 ShopName: Shop 5 DatePurchase: 2018-06-29 07:00:00.0
+ Buyer: b0 ShopName: Shop 9 DatePurchase: 2018-11-30 08:00:00.0
+
+PurchaseSession.task5c
+ShopName: Shop 0
+ShopName: Shop 8
+ShopName: Shop 2
+ShopName: Shop 5
+
+PurchaseSession.task5d
+BookName: Book 0 RegionStorage: Nizhny Novgorod CountBooks: 13 BookPricePerBook: 5000.0 TotalPRice: 3500.0
